@@ -1,0 +1,92 @@
+/* Home section */
+#home {
+    display: flex;
+    max-width: 1600px;
+    width: 90%;
+    margin: 100px auto;
+}
+
+#home > * {
+    width: 50%;
+}
+
+#home .content {
+    margin-top: 100px;
+    max-width: 700px;
+}
+
+#home > img {
+    object-fit: contain;
+    flex: 1;
+    animation: moving 3s infinite alternate linear;
+}
+
+#home h1 {
+    font-size: 4em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#home h1 span {
+    font-weight: 300;
+}
+
+#home p {
+    font-size: 1.5em;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+#home .buttons {
+    margin-bottom: 30px;
+}
+
+#home button {
+    width: 250px;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+    background: #ed8a4c;
+}
+
+#home button:nth-of-type(1){
+    background-image: linear-gradient(to right,#ed8a4c,#ea485c);
+    box-shadow: 0 3px 32px #ec75518a;
+}
+
+#home button:nth-of-type(1):hover {
+    background: #ed8a4c;
+}
+
+#home button:nth-of-type(2){
+    background: #00cde4;
+    box-shadow: 0 3px 32px #00e7ea8a;
+}
+
+#home button:nth-of-type(2):hover {
+    background: #2ddfd1;
+}
+
+#home .payments {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+}
+
+#home .payments img {
+    object-fit: contain;
+}
+
+@keyframes moving {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
